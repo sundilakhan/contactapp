@@ -1,0 +1,62 @@
+
+.contact_item {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact_card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    height:300px;
+    width:1200px;
+    font-size: 20px;
+    font-family: Poppins;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-left: 160px;
+  }
+  
+  .contact_image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .contact_details {
+    flex: 1;
+  }
+  
+  .contact_name {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    margin-top: 40px;
+    font-size: 25px; /* Reduced margin between first and last name */
+  }
+  .contact_Lname{
+    margin-left: 8px;
+  }
+  
+  .contact_body{
+    margin-top: 68px;
+    margin-left: -40px;
+  }
+  .contact_body p{
+    margin-top: 30px;
+   
+  }
+  
+  .bi {
+    margin-right: 8px;
+  
+  }
+  
+  .icon{
+    color:rgb(61, 148, 206);
+    margin-left: -50px;
+    margin-right: 30px;
+  }
+  

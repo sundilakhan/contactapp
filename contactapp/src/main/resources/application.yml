@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: contactapp
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/ContactsDatabase
+    username: root
+    password: Sundilakhan02.com
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        globally_quoted_identifiers: true
+        format_sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  mvc:
+    throw-exception-if-no-handler-found: true
+  async:
+    request-timeout: 3600000
+  server:
+    port: 8080
+    error:
+      path: /user/error
+    whitelabel:
+      enabled: false
+
+logging:
+  level:
+    root: DEBUG
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+    org.springframework.security: DEBUG
+
+thymeleaf:
+  prefix: classpath:/templates/
+  suffix: .html
+  mode: HTML5
+  encoding: UTF-8
+  cache: false
+
+jwt:
+  secret: NLcnzf7yMQVWPG5VERlpfDSkzT/C+i5HKiRnjr++VmQ=
+  expirationMs: 86400000  # 1 day in milliseconds

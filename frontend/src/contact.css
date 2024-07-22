@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.header .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header .btn i {
+  margin-right: 5px;
+}
+
+.contact-item {
+  display: block;
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-details {
+  margin-left: 10px;
+}
+
+.contact-fname,
+.contact-lname {
+  margin: 0;
+}
+
+.contact-body {
+  margin-top: 10px;
+}
+
+.contact-body p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-body i {
+  margin-right: 5px;
+}
